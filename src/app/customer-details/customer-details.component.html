@@ -1,0 +1,27 @@
+<div *ngIf="customer">
+    <h1 class="center">Customer Detaild for {{customer.firstName}} {{customer.lastName}}</h1>
+
+    <table>
+        <tr>
+            <td>ID:</td>
+            <td>{{customer.id}}</td>
+        </tr>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" [(ngModel)]="customer.firstName"></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" [(ngModel)]="customer.lastName"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" [(ngModel)]="customer.address"></td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td><input type="text" [(ngModel)]="customer.phone"></td>
+        </tr>
+    </table>
+</div>
+
